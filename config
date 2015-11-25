@@ -1,0 +1,6 @@
+ngx_addon_name=ngx_http_oauth_service_module
+HTTP_MODULES="$HTTP_MODULES ngx_http_oauth_service_module"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/src/ngx_http_oauth_service_module.c $ngx_addon_dir/src/ngx_http_sub.c $ngx_addon_dir/src/ngx_http_json.c $ngx_addon_dir/src/ngx_sub_ssl.c $ngx_addon_dir/src/ngx_sub_cache.c $ngx_addon_dir/src/ngx_sub_config.c $ngx_addon_dir/src/ngx_sub_db.c"
+NGX_ADDON_DEPS="$NGX_ADDON_DEPS $ngx_addon_dir/src/ngx_http_oauth_service_module.h $ngx_addon_dir/src/ngx_http_sub.h $ngx_addon_dir/src/ngx_http_json.h $ngx_addon_dir/src/ngx_sub_ssl.h $ngx_addon_dir/src/ngx_sub_cache.h $ngx_addon_dir/src/ngx_sub_config.h $ngx_addon_dir/src/ngx_sub_db.h"
+ngx_feature_libs="-lm"
+CORE_LIBS="$CORE_LIBS $ngx_feature_libs"
